@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>LIBRARY</title>
+</head>
+<body>
+  <header>
+    <h1>LIBRARY</h1>
+  </header>
+
+  <main>
+
+    <button id="add-new-button">ADD NEW BOOK</button>
+
+    <form>
+      <label for="title">TITLE</label>
+      <input type="text" id="title-input" name="title">
+
+      <label for="author">AUTHOR</label>
+      <input type="text" id="author-input" name="author">
+
+      <label for="pages">PAGES</label>
+      <input type="text" id="pages-input" name="pages">
+
+      <label for="status">STATUS</label>
+      <select id="status-input" name="status">
+        <option value="read">READ</option>
+        <option value="unread">UNREAD</option>
+      </select>
+
+      <input type="submit" id="submit-button" value="submit">
+      <!-- <button type="button" id="submit-button">SUBMIT</button> -->
+    </form>
+
+    <table id="books-table">
+      <thead>
+        <tr>
+          <th id="h-title">TITLE</th>
+          <th id="h-author">AUTHOR</th>
+          <th id="h-pages">PAGES</th>
+          <th id="h-status">STATUS</th>
+          <th id="h-delete"></th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+  </main>
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>

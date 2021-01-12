@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --periwinkle: #8E9AC5;
+  --light-blue: #B9D1EC;
+  --medium-blue: #7580A8;
+}
+
+body {
+  background-color: white;
+  font-family: barlow;
+  text-transform: uppercase;
+}
+
+/* header */
+
+header {
+  align-items: center;
+  background-color: var(--light-blue);
+  border-bottom: 1px solid var(--periwinkle);
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px var(--medium-blue);
+}
+
+/* buttons */
+
+button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: barlow;
+  font-weight: bold;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+#add-new-button, #submit-button, .status-button {
+  background-color: var(--periwinkle);
+}
+
+#add-new-button:hover, #submit-button:hover, .status-button:hover {
+  background-color: var(--medium-blue);
+}
+
+#add-new-button {
+  display: block;
+  font-size: 1.5rem;
+  margin: auto;
+  padding: 10px;
+  width: 300px;
+}
+
+#submit-button {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 2rem;
+  width: 100%;
+}
+
+.status-button {
+  font-size: 1rem;
+  padding: 0.3rem;
+  width: 80px;
+}
+
+.delete-button {
+  background-color: transparent;
+  display: none;
+  padding: 0;
+}
+
+tr:hover .delete-button {
+  display: block;
+}
+
+/* add new book form */
+
+form {
+  background-color: var(--light-blue);
+  color: white;
+  display: none;
+  margin: auto;
+  padding: 10px;
+  width: 300px;
+}
+
+.visible {
+  display: block;
+}
+
+label, input, select, option {
+  border: none;
+  color: var(--medium-blue);
+  display: block;
+  font-family: barlow;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type=text] {
+  padding-left: 5px;
+}
+
+input[type=text], select {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* books table */
+
+#books-table {
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  width: 60%;
+}
+
+thead {
+  background-color: var(--light-blue);
+  border-bottom: 1px solid var(--medium-blue);
+}
+
+th {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-shadow: 1px 1px var(--medium-blue);
+  vertical-align: middle;
+}
+
+#h-title {
+  text-align: left;
+  width: 40%;
+}
+
+#h-pages, #h-status, #h-delete {
+  width: 10%;
+}
+
+tbody tr {
+  border-bottom: 1px solid var(--light-blue);
+}
+
+tbody tr:hover {
+  background-color: hsla(212, 57%, 83%, 0.2);
+}
+
+td:first-child {
+  color: var(--medium-blue);
+  font-weight: bold;
+  text-align: left;
+}
+
+td {
+  color: var(--periwinkle);
+  padding: 1rem;
+  vertical-align: middle;
+}
